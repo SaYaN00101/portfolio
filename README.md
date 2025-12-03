@@ -215,23 +215,23 @@ portfolio/
 ## 📸 Screenshots
 
 ### Dark Mode
-![DarkT](https://github.com/user-attachments/assets/4e9300d1-7a7b-4523-b31c-c194c7ba73d5)
+![DarkT](https://github.com/user-attachments/assets/b5f666b1-947c-416a-a628-026909bf6fda)
 Professional dark theme with high contrast readability.
 
 ### Light Mode
-![LightTh](https://github.com/user-attachments/assets/a9976f01-f1dc-4fcf-99a1-f0c94211c1f2)
+![LightTh](https://github.com/user-attachments/assets/0a0c0a3c-ee3e-46b7-932c-5a0ff97b8e5d)
 Clean light theme optimized for daytime viewing.
 
 ### Projects Section
-![Project](https://github.com/user-attachments/assets/badcb1e6-fbf6-4438-9d9e-891f9933b2bd)
+![Project](https://github.com/user-attachments/assets/c3cc1fa1-fd77-47ef-ae97-beb2d38f1f05)
 Featured projects with descriptions and technology badges.
 
 ### Contact Form
-![From](https://github.com/user-attachments/assets/54ac071d-50a6-45b0-8a9e-3b87cd0ebe71)
+![From](https://github.com/user-attachments/assets/086d8417-4317-48aa-8d93-1c7319b0b282)
 Web3Forms integrated contact system with validation.
 
 ### Mobile Responsive
-![Mobile](https://github.com/user-attachments/assets/cf26b94d-5ba2-4a25-9952-6b7813050547)
+![Mobile](https://github.com/user-attachments/assets/eecd3c41-78b8-481c-8f69-52e51f1d311e)
 Optimized layout for mobile and tablet devices.
 
 ---
@@ -498,5 +498,6 @@ Remember:
 ---
 
 *If you found this portfolio template helpful, please give it a ⭐ on GitHub!*
+
 
 
