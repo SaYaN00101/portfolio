@@ -275,13 +275,17 @@ body.light .btn-outline {
   z-index: 80;
   pointer-events: auto;
   touch-action: manipulation;
-}
-.hamburger {
   display: inline-flex;
   flex-direction: column;   /* ← FORCE up-down stacking */
   justify-content: center;
   align-items: center;
 }
+/* .hamburger {
+  display: inline-flex;
+  flex-direction: column;   
+  justify-content: center;
+  align-items: center;
+} */
 
 .hamburger span {
   display: block;
@@ -1311,4 +1315,5 @@ body.light .form-group textarea:focus {
     visibility: hidden !important;
     pointer-events: none !important;
   }
+
 }
