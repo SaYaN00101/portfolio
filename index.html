@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description"
+    content="Portfolio of Sayan Jagulia — Aspiring full stack developer. Projects include AI chatbots, e-commerce platforms, and secure tools. Contact for internships , Jobs and collaborations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="images/icon.png" type="image/x-icon">
+  <title>Sayan Jagulia — Aspiring software engineer</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Roboto+Mono:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="dark">
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="#top">Sayan<span class="accent">Jagulia</span></a>
+      <a class="sr-only" href="#main-content">Skip to main content</a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificate">Certificate</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-ctas">
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode"
+          title="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a class="btn btn-ghost" href="resume.pdf" download>Download Resume</a>
+        <button type="button" class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"
+          aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile overlay (RIGHT sidebar) -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Mobile menu">
+      <nav class="mobile-nav-right">
+        <!-- Top brand
+        <div class="mobile-dock">
+          <div class="mobile-brand">
+            <a class="logo" href="#top">Sayan<span class="accent">Jagulia</span></a>
+          </div>
+        </div> -->
+
+        <!-- Menu -->
+        <ul class="mobile-list">
+          <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+          <li><a href="#skills"><i class="fa fa-code"></i>Skills</a></li>
+          <li><a href="#projects"><i class="fa fa-briefcase"></i>Projects</a></li>
+          <li><a href="#certificate"><i class="fa fa-certificate"></i>Certificate</a></li>
+          <li><a href="#contact-form"><i class="fa fa-envelope"></i>Contact</a></li>
+        </ul>
+
+        <!-- Buttons -->
+        <div class="mobile-cta">
+          <a class="btn btn-primary full" href="resume.pdf" download>
+            Download Resume
+          </a>
+          <button type="button" class="mobile-close" id="mobile-close">Close</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home" aria-label="Home">
+      <div class="hero-bg" role="img" aria-hidden="true"></div>
+      <div class="container hero-inner" id="main-content">
+        <div class="hero-content">
+          <h1 class="hero-title">Hi, I'm <span class="name-highlight">Sayan Jagulia</span></h1>
+          <p class="hero-sub">BCA Graduate & Aspiring Software Engineer | Full Stack Developer</p>
+          <p class="hero-lead">
+            I am a BCA graduate with a strong foundation in programming, web development, and database management.
+            I enjoy solving problems, exploring new technologies, and building projects that improve my practical
+            understanding
+            of software development. I am seeking entry-level roles or internship opportunities to learn, contribute,
+            and grow
+            as a confident and capable developer.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-ghost" href="resume.pdf" download>Download Resume</a>
+          </div>
+        </div>
+        <div class="hero-arrow" aria-hidden="true">
+          <a href="#about" class="scroll-indicator" title="Scroll to About">
+            <span class="chev"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about" aria-label="About me">
+      <div class="container grid about-grid">
+        <div class="about-photo">
+          <img src="images/Profile_IMG.png" class="headshot" alt="Sayan Jagulia headshot" loading="lazy">
+        </div>
+        <div class="about-content">
+          <h2 class="section-title">About Me</h2>
+          <p class="lead">
+            I am a BCA graduate with a strong foundation in programming, web development, and database management.
+            I enjoy solving problems, exploring new technologies, and turning ideas into functional software products
+            with clean and maintainable code.
+          </p>
+          <p>
+            My journey in tech started with curiosity about how websites and applications work and has grown into
+            building
+            full-stack projects using C, Java, Python, SQL, and modern web development tools. I am eager to contribute
+            to real-world projects, collaborate with teams, and continuously improve my skills as a software developer.
+          </p>
+          <h3 class="subtle-title">Hobbies & Interests</h3>
+          <p>
+            Passionate about strategic thinking and technology, I enjoy gaming, playing chess, exploring blockchain
+            innovations,
+            participating in crypto airdrops, and expanding my knowledge in cybersecurity and emerging tech trends.
+          </p>
+
+
+          <h3 class="subtle-title">Key Highlights</h3>
+          <ul class="highlights">
+            <li><i class="fa fa-check-circle icon"></i> Strong foundation in Data Structures & Algorithms</li>
+            <li><i class="fa fa-check-circle icon"></i> Hands-on experience with programming languages (C, Java, Python)
+              and web technologies (HTML, CSS, JavaScript, PHP)</li>
+            <li><i class="fa fa-check-circle icon"></i> Experience with database management (MySQL) and modern
+              development tools</li>
+            <li><i class="fa fa-check-circle icon"></i> Eager to contribute to real-world projects and grow
+              professionally in software development</li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills" id="skills" aria-label="Skills and technologies">
+      <div class="container">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="muted">A comprehensive toolkit for building modern web applications</p>
+
+        <div class="grid skills-grid">
+          <div class="card skill-card">
+            <h4 class="card-title"><i class="fa fa-code icon"></i> Languages</h4>
+            <ul class="skill-list">
+              <li>C</li>
+              <li>Java</li>
+              <li>Python</li>
+              <!-- removed empty list item -->
+              <li>SQL</li>
+            </ul>
+          </div>
+
+          <div class="card skill-card">
+            <h4 class="card-title"><i class="fa fa-layer-group icon"></i> Web development</h4>
+            <ul class="skill-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>PHP</li>
+            </ul>
+          </div>
+
+          <div class="card skill-card">
+            <h4 class="card-title"><i class="fa fa-database icon"></i> Databases</h4>
+            <ul class="skill-list">
+              <li>MySQL</li>
+            </ul>
+          </div>
+
+          <div class="card skill-card">
+            <h4 class="card-title"><i class="fa fa-toolbox icon"></i> Tools</h4>
+            <ul class="skill-list">
+              <li>Git / GitHub</li>
+              <li>VS Code</li>
+              <li>Docker (basic)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects" aria-label="Featured projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="muted">A showcase of recent work and technical capabilities</p>
+
+        <div class="grid projects-grid">
+
+          <!-- Project 1: SynthMind -->
+          <article class="card project-card">
+            <div class="project-media">
+              <img src="images/SynthMindBanner.png" alt="SynthMind AI Chatbot screenshot" width="1200" height="675"
+                loading="lazy">
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">SynthMind – AI Chatbot</h3>
+              <p class="project-desc">
+                A secure, intelligent AI chatbot platform built with Streamlit and MySQL.
+                Features user authentication, session-based chat history, and local LLM integration using Ollama.
+              </p>
+
+              <div class="tech-badges">
+                <span>Python</span><span>Streamlit</span><span>MySQL</span><span>Ollama</span>
+              </div>
+
+              <div class="project-actions">
+                <a class="btn btn-ghost" href="https://github.com/SaYaN00101/synthmind" target="_blank"
+                  rel="noopener noreferrer" rel="noopener">View Repo</a>
+                <a class="btn btn-outline" href="https://github.com/SaYaN00101/synthmind" target="_blank"
+                  rel="noopener noreferrer" rel="noopener"><i class="fa-solid fa-code"></i> Code</a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- Project 2: Ecommerce Store -->
+          <article class="card project-card">
+            <div class="project-media">
+              <img src="images/EComBanner.png" alt="E-Commerce website screenshot" width="1200" height="675"
+                loading="lazy">
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">E-Commerce Store</h3>
+              <p class="project-desc">
+                A full-featured e-commerce platform built with PHP and MySQL. Includes product management,
+                cart system, admin dashboard, and secure user operations.
+              </p>
+
+              <div class="tech-badges">
+                <span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span>
+              </div>
+
+              <div class="project-actions">
+                <a class="btn btn-ghost" href="https://github.com/SaYaN00101/ecommerce-store" target="_blank"
+                  rel="noopener noreferrer" rel="noopener">View Repo</a>
+                <a class="btn btn-outline" href="https://github.com/SaYaN00101/ecommerce-store" target="_blank"
+                  rel="noopener noreferrer" rel="noopener"><i class="fa-solid fa-code"></i> Code</a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- Project 3: Offline Password Manager -->
+          <article class="card project-card">
+            <div class="project-media">
+              <img src="images/PassManagerBanner.png" alt="Offline Password Manager screenshot" width="1200"
+                height="675" loading="lazy">
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Offline Password Manager</h3>
+              <p class="project-desc">
+                A secure offline password manager built in Python, designed for storing sensitive credentials without
+                internet dependency.
+                Includes encryption, local database storage, and a clean interface.
+              </p>
+
+              <div class="tech-badges">
+                <span>Python</span><span>Encryption</span><span>Local Storage</span>
+              </div>
+
+              <div class="project-actions">
+                <a class="btn btn-ghost" href="https://github.com/SaYaN00101/OfflinePasswordManager" target="_blank"
+                  rel="noopener noreferrer" rel="noopener">View Repo</a>
+                <a class="btn btn-outline" href="https://github.com/SaYaN00101/OfflinePasswordManager" target="_blank"
+                  rel="noopener noreferrer" rel="noopener"><i class="fa-solid fa-code"></i> Code</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- CERTIFICATIONS -->
+    <section class="section certifications" id="certificate" aria-label="Certifications and Achievements">
+      <div class="container">
+        <h2 class="section-title">Certifications & Achievements</h2>
+        <p class="muted">Courses and programs that helped me strengthen my technical foundation and explore new areas.
+        </p>
+
+        <div class="grid cert-grid">
+
+          <!-- Certificate 1 -->
+          <article class="card cert-card">
+            <div class="cert-icon"><i class="fa fa-shield-alt"></i></div>
+            <div class="cert-content">
+              <h3 class="cert-title">Certified Secure Computer User</h3>
+              <p class="cert-org">ITOrizin | Feb – Apr 2024</p>
+              <!-- View Certificate Button -->
+              <a href="https://drive.google.com/file/d/10wkYKy4sYn4_3yTQUpr0XLmC4Bb0E1D9/view?usp=sharing" target="_blank" class="cert-btn">
+                View Certificate
+              </a>
+            </div>
+          </article>
+
+          <!-- Certificate 2 -->
+          <article class="card cert-card">
+            <div class="cert-icon"><i class="fa fa-database"></i></div>
+            <div class="cert-content">
+              <h3 class="cert-title">Introduction to SQL</h3>
+              <p class="cert-org">Simplilearn SkillUp | Apr 2024</p>
+              <!-- View Certificate Button -->
+              <a href="https://simpli.app.link/73yS6pxGKYb" target="_blank" class="cert-btn">
+                View Certificate
+              </a>
+            </div>
+          </article>
+
+          <!-- Certificate  -->
+          <article class="card cert-card">
+            <div class="cert-icon"><i class="fa fa-certificate"></i></div>
+            <div class="cert-content">
+              <h3 class="cert-title">Python for Beginners</h3>
+              <p class="cert-org">Simplilearn SkillUp | May 2024</p>
+              <!-- View Certificate Button -->
+              <a href="https://simpli.app.link/V5LBZokGKYb" target="_blank" class="cert-btn">
+                View Certificate
+              </a>
+            </div>
+          </article>
+
+          <!-- Certificate 3 -->
+          <article class="card cert-card">
+            <div class="cert-icon"><i class="fa fa-coffee"></i></div>
+            <div class="cert-content">
+              <h3 class="cert-title">Programming in Java</h3>
+              <p class="cert-org">NPTEL | Jul – Oct 2023</p>
+              <!-- View Certificate Button -->
+              <a href="https://drive.google.com/file/d/1HZzq5Tt6j9Iiv3Scw0RpVUsKyj1Ob_ht/view?usp=sharing"
+                target="_blank" class="cert-btn">
+                View Certificate
+              </a>
+            </div>
+          </article>
+
+          <!-- Certificate 4 -->
+          <article class="card cert-card">
+            <div class="cert-icon"><i class="fa fa-chart-line"></i></div>
+            <div class="cert-content">
+              <h3 class="cert-title">Advanced Marketing Management (MDP)</h3>
+              <p class="cert-org">MSME | Nov 2023</p>
+              <!-- View Certificate Button -->
+              <a href="https://drive.google.com/file/d/1ZIjP5wYyLh492wqetgAGVauj51dYClJr/view?usp=sharing" target="_blank" class="cert-btn">
+                View Certificate
+              </a>
+            </div>
+          </article>
+          <!-- Certificate 5 -->
+          <article class="card cert-card">
+            <div class="cert-icon">
+              <i class="fa fa-certificate"></i>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">Python for Beginners</h3>
+              <p class="cert-org">EC-Council | Apr 2024</p>
+
+              <!-- View Certificate Button -->
+              <a href="https://drive.google.com/file/d/1iDYEo9P5B6mulI24jdcbF-oWopTdhP9F/view?usp=sharing" target="_blank" class="cert-btn">
+                View Certificate
+              </a>
+            </div>
+          </article>
+
+          <!-- Certificate 6 -->
+          <article class="card cert-card">
+            <div class="cert-icon">
+              <i class="fa fa-shield-alt"></i>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">
+                Introduction to Dark Web, Anonymity & Cryptocurrency
+              </h3>
+              <p class="cert-org">EC-Council | Apr 2024</p>
+
+              <!-- View Certificate Button -->
+              <a href="https://drive.google.com/file/d/1R_QODuuUB_cad6fsr622Fx973mQWy-Zc/view?usp=sharing" target="_blank" class="cert-btn">
+                View Certificate
+              </a>
+            </div>
+          </article>
+
+          <!-- Certificate: Learn JavaScript -->
+          <article class="card cert-card">
+            <div class="cert-icon">
+              <i class="fa fa-code"></i>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">Learn JavaScript</h3>
+              <p class="cert-org">IBM SkillsBuild (Codecademy) | Feb 2025</p>
+
+              <a href="images/certificates/learn-js-codecademy.jpg" target="_blank" class="cert-btn">
+                View Certificate
+              </a>
+            </div>
+          </article>
+
+          <!-- Certificate: Python Tkinter -->
+          <article class="card cert-card">
+            <div class="cert-icon">
+              <i class="fa fa-python"></i>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">Python Tkinter</h3>
+              <p class="cert-org">Great Learning Academy | Apr 2024</p>
+
+              <a href="https://www.mygreatlearning.com/certificate/KFEDVEYL" target="_blank" class="cert-btn">
+                View Certificate
+              </a>
+            </div>
+          </article>
+
+
+
+          <!-- Certificate 7 -->
+          <article class="card cert-card">
+            <div class="cert-icon">
+              <i class="fa fa-robot"></i>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">Artificial Intelligence Fundamentals</h3>
+              <p class="cert-org">IBM SkillsBuild | Mar 2025</p>
+
+              <a href="https://www.credly.com/users/sayan-jagulia" target="_blank" class="cert-btn">
+                View Certificate
+              </a>
+            </div>
+          </article>
+
+          <!-- Certificate 8 -->
+          <article class="card cert-card">
+            <div class="cert-icon">
+              <i class="fa fa-user-graduate"></i>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">English Communication And IT</h3>
+              <p class="cert-org">Anudip Foundation | Mar 2024</p>
+
+              <a href="https://drive.google.com/file/d/1Jl2epwcBctYP3DqufEJoGtWJ0FbPkKz1/view?usp=sharing"
+                target="_blank" class="cert-btn">
+                View Certificate
+              </a>
+            </div>
+          </article>
+
+          <!-- Certificate: Google Analytics -->
+          <article class="card cert-card">
+            <div class="cert-icon">
+              <i class="fa fa-chart-line"></i>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">Google Analytics</h3>
+              <p class="cert-org">Great Learning Academy | Feb 2023</p>
+
+              <a href="https://www.mygreatlearning.com/certificate/ZHQRVFLQ" target="_blank" class="cert-btn">
+                View Certificate
+              </a>
+            </div>
+          </article>
+
+
+          <!-- Certificate: Credly Badges -->
+          <article class="card cert-card">
+            <div class="cert-icon">
+              <i class="fa fa-id-badge"></i>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">Verified Badges</h3>
+              <p class="cert-org">Credly Profile</p>
+
+              <a href="https://www.credly.com/users/sayan-jagulia" target="_blank" class="cert-btn">
+                View Profile
+              </a>
+            </div>
+          </article>
+
+
+
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- CONTACT LINKS -->
+    <section class="section contact" id="contact" aria-label="Contact Information">
+      <div class="container text-center">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="muted">I'm always open to discussing new opportunities, projects, or just having a chat about
+          technology.</p>
+
+        <div class="grid contact-grid">
+          <a class="card contact-card" href="mailto:sayanjagulia489@gmail.com">
+            <div class="icon-wrap"><i class="fa fa-envelope"></i></div>
+            <div class="contact-info">
+              <h4>Email</h4>
+              <p>sayanjagulia489@gmail.com</p>
+            </div>
+          </a>
+
+          <a class="card contact-card" href="https://linkedin.com/in/sayan-jagulia" target="_blank"
+            rel="noopener noreferrer" rel="noopener">
+            <div class="icon-wrap"><i class="fa-brands fa-linkedin"></i></div>
+            <div class="contact-info">
+              <h4>LinkedIn</h4>
+              <p>sayan-jagulia</p>
+            </div>
+          </a>
+
+          <a class="card contact-card" href="https://github.com/SaYaN00101" target="_blank" rel="noopener noreferrer">
+            <div class="icon-wrap"><i class="fa-brands fa-github"></i></div>
+            <div class="contact-info">
+              <h4>GitHub</h4>
+              <p>SaYaN00101</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- <div class="resume-cta">
+        <a class="btn btn-primary" href="resume.pdf" download>Download My Resume</a>
+      </div> -->
+    </section>
+    <!-- CONTACT FORM -->
+    <section class="section contact-form-section" id="contact-form" aria-label="Contact Form">
+      <div class="container contact-form-container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="muted">Send me a message and I'll get back to you as soon as possible.</p>
+
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" id="contact-form-element">
+          <input type="hidden" name="access_key" value="c4ee96ae-81c6-4b44-ab99-28ed3d3e8bec">
+          
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message here..." rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-status" id="form-status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="copyright">
+        &copy; <span id="year"></span> Sayan Jagulia — Built with ❤️ using HTML, CSS & JavaScript
+      </div>
+
+      <div class="socials">
+        <a href="https://github.com/SaYaN00101" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sayan-jagulia" aria-label="LinkedIn" target="_blank"
+          rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>
