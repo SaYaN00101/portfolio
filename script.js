@@ -232,9 +232,3 @@ if (document.readyState === 'loading') {
 } else {
   init();
 }
-function openResume() {
-  alert("For privacy reasons, this resume requires access approval. Please submit a request on Google Drive to view the full version. Access is restricted — I will approve your request manually.");
-  window.open("YOUR_GOOGLE_DRIVE_LINK_HERE", "_blank");
-}
-
-
