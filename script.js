@@ -232,3 +232,7 @@ if (document.readyState === 'loading') {
 } else {
   init();
 }
+function showMsg() {
+  alert("For privacy reasons, this resume requires access approval. Please submit a request on next page view the full version. Access is restricted  I will approve your request manually.");
+  //window.location.href = "resume-public.pdf"; 
+}
