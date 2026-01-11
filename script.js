@@ -77,13 +77,21 @@ function init() {
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobile-menu');
   const mobileClose = document.getElementById('mobile-close');
+  // saved scroll position to restore after closing menu
+  let savedScrollY = 0;
 
   function openMenu() {
     if (!mobileMenu || !hamburger) return;
     mobileMenu.classList.add('open');
     hamburger.classList.add('is-open');
-    document.body.style.overflow = 'hidden';
-    document.documentElement.style.overflow = 'hidden';
+    // lock scroll by fixing body position and saving current scroll
+    savedScrollY = window.scrollY || window.pageYOffset || 0;
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${savedScrollY}px`;
+    document.body.style.left = '0';
+    document.body.style.right = '0';
+    document.body.style.width = '100%';
+    document.body.classList.add('menu-open');
     hamburger.setAttribute('aria-expanded','true');
     mobileMenu.setAttribute('aria-hidden','false');
     mobileMenu.setAttribute('aria-modal','true');
@@ -95,11 +103,19 @@ function init() {
     if (!mobileMenu || !hamburger) return;
     mobileMenu.classList.remove('open');
     hamburger.classList.remove('is-open');
-    document.body.style.overflow = '';
-    document.documentElement.style.overflow = '';
+    // restore scroll and remove fixed positioning
+    document.body.style.position = '';
+    const prevTop = document.body.style.top;
+    document.body.style.top = '';
+    document.body.style.left = '';
+    document.body.style.right = '';
+    document.body.style.width = '';
+    document.body.classList.remove('menu-open');
     hamburger.setAttribute('aria-expanded','false');
     mobileMenu.setAttribute('aria-hidden','true');
     mobileMenu.removeAttribute('aria-modal');
+    // restore scroll to previous position
+    window.scrollTo(0, savedScrollY || 0);
     // return focus to hamburger for keyboard users
     hamburger && hamburger.focus();
   }
@@ -111,8 +127,7 @@ function init() {
   }
 
   hamburger && hamburger.addEventListener('click', toggleMenuFromBtn);
-  // Some mobile browsers prefer touchstart, add it (prevent double-invoke)
-  hamburger && hamburger.addEventListener('touchstart', function (e) { e.preventDefault(); toggleMenuFromBtn(e); }, { passive: false });
+  // Use click for toggling (sufficient for both desktop and mobile). Avoid touchstart to prevent double-invokes on some devices.
 
   // close via close button
   mobileClose && mobileClose.addEventListener('click', closeMenu);
@@ -132,6 +147,18 @@ function init() {
   mobileMenu && mobileMenu.addEventListener('click', function (e) {
     if (e.target === mobileMenu) closeMenu();
   });
+
+  // Close the mobile menu when clicking or tapping anywhere outside the menu (works on mobile and desktop)
+  // Use pointerdown to capture mouse/touch/pen input early and avoid double-invokes.
+  document.addEventListener('pointerdown', function (e) {
+    if (!mobileMenu || !mobileMenu.classList.contains('open')) return;
+    // If the click/tap is inside the mobile menu or on the hamburger button, ignore it
+    const clickedInsideMenu = mobileMenu.contains(e.target);
+    const clickedOnHamburger = hamburger && hamburger.contains(e.target);
+    if (!clickedInsideMenu && !clickedOnHamburger) {
+      closeMenu();
+    }
+  }, true);
 
   // Toggle aria-label for hamburger (accessibility)
   function updateAria() {

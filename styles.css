@@ -349,6 +349,112 @@ body.light .hero-bg {
   flex-wrap: wrap;
 }
 
+/* Decorative hero illustration (desktop only) */
+.hero-illustration {
+  display: none; /* hidden by default for mobile */
+}
+.hero-illustration .hero-svg {
+  display: block;
+  width: 320px;
+  height: auto;
+}
+
+/* layout adjustments for desktop */
+@media (min-width: 1024px) {
+  /* put illustration on the right using flex order */
+  .hero-illustration {
+    display: block;
+    flex: 0 0 360px;
+    margin-left: 28px;
+    margin-right: 0;
+    order: 3; /* keep illustration at the far right */
+    align-self: center;
+  }
+
+  .hero-arrow {
+    display: block;
+    order: 2; /* place arrow between content and illustration */
+    align-self: center;
+    margin-left: 12px;
+    margin-right: 0;
+  }
+
+  .hero-illustration .hero-svg {
+    width: 360px;
+    transform-origin: center;
+    animation: float 6s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  .hero-content {
+    flex: 1 1 auto;
+    min-width: 320px;
+    order: 1;
+  }
+
+  .hero-illustration .eye {
+    transform-origin: center;
+    transform-box: fill-box;
+    animation: blink 6s infinite;
+  }
+
+  /* Avatar-specific animations */
+  .hero-illustration .head {
+    transform-origin: center 60%;
+    animation: headTilt 6s ease-in-out infinite;
+  }
+
+  .hero-illustration .hair {
+    transform-origin: 50% 10%;
+    animation: hairSway 4.8s ease-in-out infinite;
+  }
+
+  .hero-illustration .shirt {
+    animation: shirtBob 6s ease-in-out infinite;
+  }
+
+  .hero-illustration .shadow {
+    animation: shadowPulse 6s ease-in-out infinite;
+  }
+
+  @keyframes hairSway {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(-3deg); }
+    100% { transform: rotate(0deg); }
+  }
+
+  @keyframes headTilt {
+    0% { transform: rotate(0deg); }
+    45% { transform: rotate(-2deg); }
+    55% { transform: rotate(2deg); }
+    100% { transform: rotate(0deg); }
+  }
+
+  @keyframes shirtBob {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+    100% { transform: translateY(0); }
+  }
+
+  @keyframes shadowPulse {
+    0% { transform: scaleX(1); opacity: 0.12; }
+    50% { transform: scaleX(0.96); opacity: 0.08; }
+    100% { transform: scaleX(1); opacity: 0.12; }
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes blink {
+  0%, 94% { transform: scaleY(1); }
+  95% { transform: scaleY(0.08); }
+  100% { transform: scaleY(1); }
+}
+
 /* Make hero content use more horizontal space (remove extra side gap)
    Keeps other sections using the normal `.container` max-width. */
 .hero .container {
@@ -981,12 +1087,13 @@ body.light .footer-links a {
   background: rgba(0, 0, 0, 0.45);
   backdrop-filter: blur(3px);
   z-index: var(--z-mobile);
-  /* use opacity/visibility so we can animate and preserve flow */
+  /* use opacity/visibility so we can show/hide instantly */
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: translateY(-6px);
-  transition: opacity 220ms var(--transition), transform 220ms var(--transition), visibility 0s 220ms;
+  /* no opening animation */
+  transform: none;
+  transition: none;
   padding: 80px 20px;
 }
 
@@ -995,8 +1102,13 @@ body.light .footer-links a {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transform: translateY(0);
-  transition: opacity 220ms var(--transition), transform 220ms var(--transition), visibility 0s 0s;
+  transform: none;
+  transition: none;
+}
+
+/* prevent background scroll when mobile menu open (avoid layout shift) */
+body.menu-open {
+  overflow: hidden;
 }
 
 /* show panel when open */
@@ -1059,7 +1171,7 @@ body.light .mobile-close {
   color: #666666;
 }
 
-/* Right-side slide-in panel */
+/* Right-side slide-in panel (now appears instantly) */
 .mobile-nav-right {
   position: absolute;
   top: 0;
@@ -1069,8 +1181,8 @@ body.light .mobile-close {
   background: var(--card);
   padding: 20px;
   box-shadow: -4px 0 20px rgba(0, 0, 0, 0.2);
-  transform: translateX(100%);
-  transition: transform 280ms var(--transition);
+  transform: none;
+  transition: none;
   overflow-y: auto;
   border-left: 1px solid rgba(255, 255, 255, 0.03);
   display: flex;
