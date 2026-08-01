@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description"
-    content="Portfolio of Sayan Jagulia — Aspiring full stack developer. Projects include AI chatbots, e-commerce platforms, and secure tools. Contact for internships , Jobs and collaborations." />
+    content="Portfolio of Sayan Jagulia — Aspiring full stack developer. Projects include AI chatbots, e-commerce platforms, and secure tools. Contact for internships, jobs and collaborations." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="icon" href="images/icon.png" type="image/x-icon">
@@ -33,6 +33,7 @@
       <nav class="main-nav" id="main-nav" aria-label="Main navigation">
         <ul>
           <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#certificate">Certificate</a></li>
@@ -45,7 +46,7 @@
           title="Toggle theme">
           <i class="fa-solid fa-moon"></i>
         </button>
-        <a class="btn btn-ghost" href="https://drive.google.com/file/d/1FpZEuuStbqNfPEuxyIuYbj25fuFGayrF/view?usp=sharing" download>Download Resume</a>
+        <a class="btn btn-ghost" href="https://drive.google.com/file/d/1FpZEuuStbqNfPEuxyIuYbj25fuFGayrF/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download Resume</a>
         <button type="button" class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"
           aria-controls="mobile-menu">
           <span></span><span></span><span></span>
@@ -53,34 +54,7 @@
       </div>
     </div>
 
-    <!-- Mobile overlay (RIGHT sidebar) -->
-    <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Mobile menu">
-      <nav class="mobile-nav-right">
-        <!-- Top brand
-        <div class="mobile-dock">
-          <div class="mobile-brand">
-            <a class="logo" href="#top">Sayan<span class="accent">Jagulia</span></a>
-          </div>
-        </div> -->
-
-        <!-- Menu -->
-        <ul class="mobile-list">
-          <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
-          <li><a href="#skills"><i class="fa fa-code"></i>Skills</a></li>
-          <li><a href="#projects"><i class="fa fa-briefcase"></i>Projects</a></li>
-          <li><a href="#certificate"><i class="fa fa-certificate"></i>Certificate</a></li>
-          <li><a href="#contact-form"><i class="fa fa-envelope"></i>Contact</a></li>
-        </ul>
-
-        <!-- Buttons -->
-        <div class="mobile-cta">
-          <a class="btn btn-primary full" href="https://drive.google.com/file/d/1FpZEuuStbqNfPEuxyIuYbj25fuFGayrF/view?usp=sharing" download>
-            Download Resume
-          </a>
-          <button type="button" class="mobile-close" id="mobile-close">Close</button>
-        </div>
-      </nav>
-    </div>
+    <!-- Mobile overlay moved to body level for correct stacking -->
   </header>
 
   <main>
@@ -155,19 +129,17 @@
           </svg>
         </div>
         <div class="hero-content">
+          <div class="hero-chip"><i class="fa-solid fa-terminal"></i> Available for Internships &amp; Jobs</div>
           <h1 class="hero-title">Hi, I'm <span class="name-highlight">Sayan Jagulia</span></h1>
-          <p class="hero-sub">BCA Graduate & Aspiring Software Engineer | Full Stack Developer</p>
+          <p class="hero-sub"><span id="typed-text"></span><span class="typed-cursor">|</span></p>
           <p class="hero-lead">
-            I am a BCA graduate with a strong foundation in programming, web development, and database management.
-            I enjoy solving problems, exploring new technologies, and building projects that improve my practical
-            understanding
-            of software development. I am seeking entry-level roles or internship opportunities to learn, contribute,
-            and grow
-            as a confident and capable developer.
+            MCA student with hands-on full-stack development experience across PHP, Python, and JavaScript. Built and
+            shipped six projects — spanning AI chatbots, e-commerce platforms, a scheme discovery app, security tools, and
+            RAG backends — with a BCA foundation (7.54 CGPA) and a solid grounding in OOP and secure system design.
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#projects">View Projects</a>
-            <a class="btn btn-ghost" href="#contact" download>Contact</a>
+            <a class="btn btn-ghost" href="#contact">Contact</a>
           </div>
         </div>
         <div class="hero-arrow" aria-hidden="true">
@@ -182,20 +154,20 @@
     <section class="section about" id="about" aria-label="About me">
       <div class="container grid about-grid">
         <div class="about-photo">
-          <img src="images/Profile_IMG.png" class="headshot" alt="Sayan Jagulia headshot" loading="lazy">
+          <img src="images/Profile_IMG.png" class="headshot" alt="Sayan Jagulia headshot" loading="eager" width="400" height="480">
         </div>
         <div class="about-content">
           <h2 class="section-title">About Me</h2>
           <p class="lead">
-            I am a BCA graduate with a strong foundation in programming, web development, and database management.
-            I enjoy solving problems, exploring new technologies, and turning ideas into functional software products
-            with clean and maintainable code.
+            MCA student with hands-on full-stack development experience across PHP, Python, and JavaScript. Built and
+            shipped six projects spanning AI, e-commerce, a scheme discovery app, security tools, and RAG backends —
+            covering web development, database design, and applied security.
           </p>
           <p>
-            My journey in tech started with curiosity about how websites and applications work and has grown into
-            building
-            full-stack projects using C, Java, Python, SQL, and modern web development tools. I am eager to contribute
-            to real-world projects, collaborate with teams, and continuously improve my skills as a software developer.
+            Adaptable and quick to learn new stacks, with a BCA foundation (7.54 CGPA) from Institute of Management
+            Study, Kolkata, and a solid grounding in OOP and secure system design. Currently pursuing MCA at Maulana
+            Abul Kalam Azad University of Technology (2025–2027), actively seeking entry-level roles or internship
+            opportunities to contribute and grow.
           </p>
           <h3 class="subtle-title">Hobbies & Interests</h3>
           <p>
@@ -207,14 +179,71 @@
 
           <h3 class="subtle-title">Key Highlights</h3>
           <ul class="highlights">
-            <li><i class="fa fa-check-circle icon"></i> Strong foundation in Data Structures & Algorithms</li>
-            <li><i class="fa fa-check-circle icon"></i> Hands-on experience with programming languages (C, Java, Python)
-              and web technologies (HTML, CSS, JavaScript, PHP)</li>
-            <li><i class="fa fa-check-circle icon"></i> Experience with database management (MySQL) and modern
-              development tools</li>
-            <li><i class="fa fa-check-circle icon"></i> Eager to contribute to real-world projects and grow
-              professionally in software development</li>
+            <li><i class="fa fa-check-circle icon"></i> Shipped 6 projects spanning AI chatbots, e-commerce, a scheme discovery app, security tools, and RAG backends</li>
+            <li><i class="fa fa-check-circle icon"></i> Full-stack across Python, PHP, and JavaScript — Streamlit, Node.js, HTML/CSS and MySQL-backed systems</li>
+            <li><i class="fa fa-check-circle icon"></i> Strong grasp of OOP, encryption, session management, secure system design, and local LLM deployment via Ollama</li>
+            <li><i class="fa fa-check-circle icon"></i> Currently pursuing MCA (2025–2027) — building on a BCA foundation (7.54 CGPA)</li>
           </ul>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section education" id="education" aria-label="Education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <p class="muted">My academic journey in computer science and technology</p>
+
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card">
+              <div class="timeline-header">
+                <span class="timeline-badge pursuing">Pursuing</span>
+                <span class="timeline-year">2025 – 2027</span>
+              </div>
+              <h3 class="timeline-degree">Master of Computer Applications (MCA)</h3>
+              <p class="timeline-inst"><i class="fa fa-university icon-sm"></i> Maulana Abul Kalam Azad University of Technology, West Bengal</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card">
+              <div class="timeline-header">
+                <span class="timeline-badge completed">7.54 CGPA</span>
+                <span class="timeline-year">2022 – 2025</span>
+              </div>
+              <h3 class="timeline-degree">Bachelor of Computer Applications (BCA)</h3>
+              <p class="timeline-inst"><i class="fa fa-university icon-sm"></i> Institute of Management Study, Kolkata</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card">
+              <div class="timeline-header">
+                <span class="timeline-badge completed">74%</span>
+                <span class="timeline-year">2020 – 2022</span>
+              </div>
+              <h3 class="timeline-degree">Higher Secondary — WBCHSE (Class XII)</h3>
+              <p class="timeline-inst"><i class="fa fa-school icon-sm"></i> Satyanarayan Pur S.B High School, Gosaba, South 24 Pgs</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card">
+              <div class="timeline-header">
+                <span class="timeline-badge completed">Passed</span>
+                <span class="timeline-year">2020</span>
+              </div>
+              <h3 class="timeline-degree">Secondary School — WBBSE (Class X)</h3>
+              <p class="timeline-inst"><i class="fa fa-school icon-sm"></i> Satyanarayan Pur S.B High School, Gosaba, South 24 Pgs</p>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -223,28 +252,29 @@
     <!-- SKILLS -->
     <section class="section skills" id="skills" aria-label="Skills and technologies">
       <div class="container">
-        <h2 class="section-title">Skills & Technologies</h2>
-        <p class="muted">A comprehensive toolkit for building modern web applications</p>
+        <h2 class="section-title">Skills &amp; Technologies</h2>
+        <p class="muted">Languages, frameworks, and tools I work with</p>
 
         <div class="grid skills-grid">
           <div class="card skill-card">
             <h4 class="card-title"><i class="fa fa-code icon"></i> Languages</h4>
             <ul class="skill-list">
-              <li>C</li>
-              <li>Java</li>
               <li>Python</li>
-              <!-- removed empty list item -->
+              <li>JavaScript</li>
+              <li>Java</li>
+              <li>PHP</li>
+              <li>C</li>
               <li>SQL</li>
             </ul>
           </div>
 
           <div class="card skill-card">
-            <h4 class="card-title"><i class="fa fa-layer-group icon"></i> Web development</h4>
+            <h4 class="card-title"><i class="fa fa-layer-group icon"></i> Web &amp; Frameworks</h4>
             <ul class="skill-list">
               <li>HTML</li>
               <li>CSS</li>
-              <li>JavaScript</li>
-              <li>PHP</li>
+              <li>Streamlit</li>
+              <li>Node.js</li>
             </ul>
           </div>
 
@@ -256,11 +286,24 @@
           </div>
 
           <div class="card skill-card">
-            <h4 class="card-title"><i class="fa fa-toolbox icon"></i> Tools</h4>
+            <h4 class="card-title"><i class="fa fa-toolbox icon"></i> Tools &amp; Systems</h4>
             <ul class="skill-list">
+              <li>Linux</li>
               <li>Git / GitHub</li>
+              <li>Ollama (local LLM)</li>
+              <li>Vercel</li>
               <li>VS Code</li>
-              <li>Docker (basic)</li>
+            </ul>
+          </div>
+
+          <div class="card skill-card">
+            <h4 class="card-title"><i class="fa-solid fa-shield-halved icon"></i> Concepts</h4>
+            <ul class="skill-list">
+              <li>OOP</li>
+              <li>Secure System Design</li>
+              <li>Encryption</li>
+              <li>RAG (AI)</li>
+              <li>Session Management</li>
             </ul>
           </div>
         </div>
@@ -268,93 +311,145 @@
     </section>
 
     <!-- PROJECTS -->
-    <section class="section projects" id="projects" aria-label="Featured projects">
+    <section class="section projects" id="projects" aria-label="Projects">
       <div class="container">
-        <h2 class="section-title">Featured Projects</h2>
-        <p class="muted">A showcase of recent work and technical capabilities</p>
+        <h2 class="section-title">Projects</h2>
+        <p class="muted">A collection of everything I've built — web apps, AI tools, and security utilities</p>
 
         <div class="grid projects-grid">
 
           <!-- Project 1: SynthMind -->
           <article class="card project-card">
             <div class="project-media">
-              <img src="images/SynthMindBanner.png" alt="SynthMind AI Chatbot screenshot" width="1200" height="675"
-                loading="lazy">
+              <img src="images/SynthMindBanner.png" alt="SynthMind AI Chatbot screenshot" width="1200" height="675" loading="lazy">
             </div>
-
             <div class="project-body">
               <h3 class="project-title">SynthMind – AI Chatbot</h3>
               <p class="project-desc">
-                A secure, intelligent AI chatbot platform built with Streamlit and MySQL.
-                Features user authentication, session-based chat history, and local LLM integration using Ollama.
+                Built a secure, authenticated AI chatbot in Python and Streamlit, integrating a locally hosted LLM via
+                Ollama with MySQL-backed session storage to preserve chat history without relying on external cloud APIs.
               </p>
-
               <div class="tech-badges">
                 <span>Python</span><span>Streamlit</span><span>MySQL</span><span>Ollama</span>
               </div>
-
               <div class="project-actions">
-                <a class="btn btn-ghost" href="https://github.com/SaYaN00101/synthmind" target="_blank"
-                  rel="noopener noreferrer" rel="noopener">View Repo</a>
-                <a class="btn btn-outline" href="https://github.com/SaYaN00101/synthmind" target="_blank"
-                  rel="noopener noreferrer" rel="noopener"><i class="fa-solid fa-code"></i> Code</a>
+                <a class="btn btn-ghost" href="https://github.com/SaYaN00101/synthmind" target="_blank" rel="noopener noreferrer">View Repo</a>
+                <a class="btn btn-outline" href="https://github.com/SaYaN00101/synthmind" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-code"></i> Code</a>
               </div>
             </div>
           </article>
-
 
           <!-- Project 2: Ecommerce Store -->
           <article class="card project-card">
             <div class="project-media">
-              <img src="images/EComBanner.png" alt="E-Commerce website screenshot" width="1200" height="675"
-                loading="lazy">
+              <img src="images/EComBanner.png" alt="E-Commerce website screenshot" width="1200" height="675" loading="lazy">
             </div>
-
             <div class="project-body">
               <h3 class="project-title">E-Commerce Store</h3>
               <p class="project-desc">
-                A full-featured e-commerce platform built with PHP and MySQL. Includes product management,
-                cart system, admin dashboard, and secure user operations.
+                Engineered a full-featured e-commerce platform in PHP and MySQL, implementing product catalog
+                management, a shopping cart, and a role-based admin dashboard alongside secure, session-based
+                user authentication.
               </p>
-
               <div class="tech-badges">
                 <span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span>
               </div>
-
               <div class="project-actions">
-                <a class="btn btn-ghost" href="https://github.com/SaYaN00101/ecommerce-store" target="_blank"
-                  rel="noopener noreferrer" rel="noopener">View Repo</a>
-                <a class="btn btn-outline" href="https://github.com/SaYaN00101/ecommerce-store" target="_blank"
-                  rel="noopener noreferrer" rel="noopener"><i class="fa-solid fa-code"></i> Code</a>
+                <a class="btn btn-ghost" href="https://github.com/SaYaN00101/ecommerce-store" target="_blank" rel="noopener noreferrer">View Repo</a>
+                <a class="btn btn-outline" href="https://github.com/SaYaN00101/ecommerce-store" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-code"></i> Code</a>
               </div>
             </div>
           </article>
 
-
           <!-- Project 3: Offline Password Manager -->
           <article class="card project-card">
             <div class="project-media">
-              <img src="images/PassManagerBanner.png" alt="Offline Password Manager screenshot" width="1200"
-                height="675" loading="lazy">
+              <img src="images/PassManagerBanner.png" alt="Offline Password Manager screenshot" width="1200" height="675" loading="lazy">
             </div>
-
             <div class="project-body">
               <h3 class="project-title">Offline Password Manager</h3>
               <p class="project-desc">
-                A secure offline password manager built in Python, designed for storing sensitive credentials without
-                internet dependency.
-                Includes encryption, local database storage, and a clean interface.
+                Developed an offline password manager in Python that stores encrypted credentials locally,
+                eliminating cloud exposure through custom encryption logic and a lightweight, secure user interface.
               </p>
-
               <div class="tech-badges">
                 <span>Python</span><span>Encryption</span><span>Local Storage</span>
               </div>
-
               <div class="project-actions">
-                <a class="btn btn-ghost" href="https://github.com/SaYaN00101/OfflinePasswordManager" target="_blank"
-                  rel="noopener noreferrer" rel="noopener">View Repo</a>
-                <a class="btn btn-outline" href="https://github.com/SaYaN00101/OfflinePasswordManager" target="_blank"
-                  rel="noopener noreferrer" rel="noopener"><i class="fa-solid fa-code"></i> Code</a>
+                <a class="btn btn-ghost" href="https://github.com/SaYaN00101/OfflinePasswordManager" target="_blank" rel="noopener noreferrer">View Repo</a>
+                <a class="btn btn-outline" href="https://github.com/SaYaN00101/OfflinePasswordManager" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-code"></i> Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Government Scheme Finder -->
+          <article class="card project-card">
+            <div class="project-media project-placeholder">
+              <div class="project-placeholder-inner">
+                <i class="fa-solid fa-landmark"></i>
+                <span>Web App</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Government Scheme Finder</h3>
+              <p class="project-desc">
+                A web app that helps users discover relevant Indian government schemes based on their profile.
+                Features a clean search interface with scheme details and eligibility information.
+              </p>
+              <div class="tech-badges">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn-ghost" href="https://govscheme-finder.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a class="btn btn-outline" href="https://github.com/SaYaN00101/scheme" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-code"></i> Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: RAG News API -->
+          <article class="card project-card">
+            <div class="project-media project-placeholder">
+              <div class="project-placeholder-inner">
+                <i class="fa-solid fa-newspaper"></i>
+                <span>API / Backend</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">RAG News API</h3>
+              <p class="project-desc">
+                A Retrieval-Augmented Generation (RAG) backend that fetches and summarises news articles,
+                enabling contextual Q&amp;A over live news content using a Node.js API layer.
+              </p>
+              <div class="tech-badges">
+                <span>JavaScript</span><span>Node.js</span><span>RAG</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn-ghost" href="https://github.com/SaYaN00101/rag-news-api" target="_blank" rel="noopener noreferrer">View Repo</a>
+                <a class="btn btn-outline" href="https://github.com/SaYaN00101/rag-news-api" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-code"></i> Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Portfolio Website -->
+          <article class="card project-card">
+            <div class="project-media project-placeholder">
+              <div class="project-placeholder-inner">
+                <i class="fa-solid fa-globe"></i>
+                <span>Portfolio</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Portfolio Website</h3>
+              <p class="project-desc">
+                This portfolio — a fully responsive single-page site built with vanilla HTML, CSS, and JavaScript.
+                Features dark/light mode, typewriter animation, glassmorphism cards, and a Web3Forms contact system.
+              </p>
+              <div class="tech-badges">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn btn-ghost" href="https://sayanjagulia.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a class="btn btn-outline" href="https://github.com/SaYaN00101/portfolio" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-code"></i> Code</a>
               </div>
             </div>
           </article>
@@ -372,201 +467,131 @@
 
         <div class="grid cert-grid">
 
-          <!-- Certificate 1 -->
+          <article class="card cert-card">
+            <div class="cert-icon"><i class="fa-brands fa-google"></i></div>
+            <div class="cert-content">
+              <h3 class="cert-title">Google Cloud Skill Badges <span style="font-size:0.78rem;font-weight:600;color:var(--accent-alt);background:rgba(34,224,255,0.1);padding:2px 8px;border-radius:999px;margin-left:6px;">×33</span></h3>
+              <p class="cert-org">Google Cloud | 2024 – 2026</p>
+              <a href="https://www.credly.com/users/sayan-jagulia" target="_blank" class="cert-btn">View All Badges</a>
+            </div>
+          </article>
+
+          <article class="card cert-card">
+            <div class="cert-icon"><i class="fa fa-linux"></i></div>
+            <div class="cert-content">
+              <h3 class="cert-title">Linux Essentials</h3>
+              <p class="cert-org">Cisco Networking Academy | May 2026</p>
+              <a href="https://www.credly.com/badges/8ac625ab-4679-4846-9c55-46be03634f74/public_url" target="_blank" class="cert-btn">View Badge</a>
+            </div>
+          </article>
+
+          <article class="card cert-card">
+            <div class="cert-icon"><i class="fa fa-robot"></i></div>
+            <div class="cert-content">
+              <h3 class="cert-title">Artificial Intelligence Fundamentals</h3>
+              <p class="cert-org">IBM SkillsBuild | Mar 2025</p>
+              <a href="https://www.credly.com/badges/b4048af6-add4-4520-9d25-9cc294be1d4a/public_url" target="_blank" class="cert-btn">View Badge</a>
+            </div>
+          </article>
+
+          <article class="card cert-card">
+            <div class="cert-icon"><i class="fa-solid fa-mug-hot"></i></div>
+            <div class="cert-content">
+              <h3 class="cert-title">Programming in Java</h3>
+              <p class="cert-org">NPTEL | Jul – Oct 2023</p>
+              <a href="https://drive.google.com/file/d/1HZzq5Tt6j9Iiv3Scw0RpVUsKyj1Ob_ht/view?usp=sharing" target="_blank" class="cert-btn">View Certificate</a>
+            </div>
+          </article>
+
+          <article class="card cert-card">
+            <div class="cert-icon"><i class="fa fa-code"></i></div>
+            <div class="cert-content">
+              <h3 class="cert-title">Learn JavaScript</h3>
+              <p class="cert-org">IBM SkillsBuild (Codecademy) | Feb 2025</p>
+              <a href="https://skills.yourlearning.ibm.com/certificate/URL-4FF4AA6A2C77" target="_blank" class="cert-btn">View Certificate</a>
+            </div>
+          </article>
+
           <article class="card cert-card">
             <div class="cert-icon"><i class="fa fa-shield-alt"></i></div>
             <div class="cert-content">
               <h3 class="cert-title">Certified Secure Computer User</h3>
               <p class="cert-org">ITOrizin | Feb – Apr 2024</p>
-              <!-- View Certificate Button -->
-              <a href="https://drive.google.com/file/d/10wkYKy4sYn4_3yTQUpr0XLmC4Bb0E1D9/view?usp=sharing" target="_blank" class="cert-btn">
-                View Certificate
-              </a>
+              <a href="https://drive.google.com/file/d/10wkYKy4sYn4_3yTQUpr0XLmC4Bb0E1D9/view?usp=sharing" target="_blank" class="cert-btn">View Certificate</a>
             </div>
           </article>
 
-          <!-- Certificate 2 -->
           <article class="card cert-card">
-            <div class="cert-icon"><i class="fa fa-database"></i></div>
+            <div class="cert-icon"><i class="fa fa-shield-alt"></i></div>
             <div class="cert-content">
-              <h3 class="cert-title">Introduction to SQL</h3>
-              <p class="cert-org">Simplilearn SkillUp | Apr 2024</p>
-              <!-- View Certificate Button -->
-              <a href="https://simpli.app.link/73yS6pxGKYb" target="_blank" class="cert-btn">
-                View Certificate
-              </a>
+              <h3 class="cert-title">Introduction to Dark Web, Anonymity &amp; Cryptocurrency</h3>
+              <p class="cert-org">EC-Council | Apr 2024</p>
+              <a href="https://drive.google.com/file/d/1R_QODuuUB_cad6fsr622Fx973mQWy-Zc/view?usp=sharing" target="_blank" class="cert-btn">View Certificate</a>
             </div>
           </article>
 
-          <!-- Certificate  -->
+          <article class="card cert-card">
+            <div class="cert-icon"><i class="fa fa-certificate"></i></div>
+            <div class="cert-content">
+              <h3 class="cert-title">Python for Beginners</h3>
+              <p class="cert-org">EC-Council | Apr 2024</p>
+              <a href="https://drive.google.com/file/d/1iDYEo9P5B6mulI24jdcbF-oWopTdhP9F/view?usp=sharing" target="_blank" class="cert-btn">View Certificate</a>
+            </div>
+          </article>
+
           <article class="card cert-card">
             <div class="cert-icon"><i class="fa fa-certificate"></i></div>
             <div class="cert-content">
               <h3 class="cert-title">Python for Beginners</h3>
               <p class="cert-org">Simplilearn SkillUp | May 2024</p>
-              <!-- View Certificate Button -->
-              <a href="https://simpli.app.link/V5LBZokGKYb" target="_blank" class="cert-btn">
-                View Certificate
-              </a>
+              <a href="https://simpli.app.link/V5LBZokGKYb" target="_blank" class="cert-btn">View Certificate</a>
             </div>
           </article>
 
-          <!-- Certificate 3 -->
           <article class="card cert-card">
-            <div class="cert-icon"><i class="fa fa-coffee"></i></div>
+            <div class="cert-icon"><i class="fa-brands fa-python"></i></div>
             <div class="cert-content">
-              <h3 class="cert-title">Programming in Java</h3>
-              <p class="cert-org">NPTEL | Jul – Oct 2023</p>
-              <!-- View Certificate Button -->
-              <a href="https://drive.google.com/file/d/1HZzq5Tt6j9Iiv3Scw0RpVUsKyj1Ob_ht/view?usp=sharing"
-                target="_blank" class="cert-btn">
-                View Certificate
-              </a>
+              <h3 class="cert-title">Python Tkinter</h3>
+              <p class="cert-org">Great Learning Academy | Apr 2024</p>
+              <a href="https://www.mygreatlearning.com/certificate/KFEDVEYL" target="_blank" class="cert-btn">View Certificate</a>
             </div>
           </article>
 
-          <!-- Certificate 4 -->
+          <article class="card cert-card">
+            <div class="cert-icon"><i class="fa fa-database"></i></div>
+            <div class="cert-content">
+              <h3 class="cert-title">Introduction to SQL</h3>
+              <p class="cert-org">Simplilearn SkillUp | Apr 2024</p>
+              <a href="https://simpli.app.link/73yS6pxGKYb" target="_blank" class="cert-btn">View Certificate</a>
+            </div>
+          </article>
+
+          <article class="card cert-card">
+            <div class="cert-icon"><i class="fa fa-chart-line"></i></div>
+            <div class="cert-content">
+              <h3 class="cert-title">Google Analytics</h3>
+              <p class="cert-org">Great Learning Academy | Feb 2023</p>
+              <a href="https://www.mygreatlearning.com/certificate/ZHQRVFLQ" target="_blank" class="cert-btn">View Certificate</a>
+            </div>
+          </article>
+
+          <article class="card cert-card">
+            <div class="cert-icon"><i class="fa fa-user-graduate"></i></div>
+            <div class="cert-content">
+              <h3 class="cert-title">English Communication and IT</h3>
+              <p class="cert-org">Anudip Foundation | Mar 2024</p>
+              <a href="https://drive.google.com/file/d/1Jl2epwcBctYP3DqufEJoGtWJ0FbPkKz1/view?usp=sharing" target="_blank" class="cert-btn">View Certificate</a>
+            </div>
+          </article>
+
           <article class="card cert-card">
             <div class="cert-icon"><i class="fa fa-chart-line"></i></div>
             <div class="cert-content">
               <h3 class="cert-title">Advanced Marketing Management (MDP)</h3>
               <p class="cert-org">MSME | Nov 2023</p>
-              <!-- View Certificate Button -->
-              <a href="https://drive.google.com/file/d/1ZIjP5wYyLh492wqetgAGVauj51dYClJr/view?usp=sharing" target="_blank" class="cert-btn">
-                View Certificate
-              </a>
+              <a href="https://drive.google.com/file/d/1ZIjP5wYyLh492wqetgAGVauj51dYClJr/view?usp=sharing" target="_blank" class="cert-btn">View Certificate</a>
             </div>
           </article>
-          <!-- Certificate 5 -->
-          <article class="card cert-card">
-            <div class="cert-icon">
-              <i class="fa fa-certificate"></i>
-            </div>
-            <div class="cert-content">
-              <h3 class="cert-title">Python for Beginners</h3>
-              <p class="cert-org">EC-Council | Apr 2024</p>
-
-              <!-- View Certificate Button -->
-              <a href="https://drive.google.com/file/d/1iDYEo9P5B6mulI24jdcbF-oWopTdhP9F/view?usp=sharing" target="_blank" class="cert-btn">
-                View Certificate
-              </a>
-            </div>
-          </article>
-
-          <!-- Certificate 6 -->
-          <article class="card cert-card">
-            <div class="cert-icon">
-              <i class="fa fa-shield-alt"></i>
-            </div>
-            <div class="cert-content">
-              <h3 class="cert-title">
-                Introduction to Dark Web, Anonymity & Cryptocurrency
-              </h3>
-              <p class="cert-org">EC-Council | Apr 2024</p>
-
-              <!-- View Certificate Button -->
-              <a href="https://drive.google.com/file/d/1R_QODuuUB_cad6fsr622Fx973mQWy-Zc/view?usp=sharing" target="_blank" class="cert-btn">
-                View Certificate
-              </a>
-            </div>
-          </article>
-
-          <!-- Certificate: Learn JavaScript -->
-          <article class="card cert-card">
-            <div class="cert-icon">
-              <i class="fa fa-code"></i>
-            </div>
-            <div class="cert-content">
-              <h3 class="cert-title">Learn JavaScript</h3>
-              <p class="cert-org">IBM SkillsBuild (Codecademy) | Feb 2025</p>
-
-              <a href="https://skills.yourlearning.ibm.com/certificate/share/d415088cbaewogICJvYmplY3RJZCIgOiAiVVJMLTRGRjRBQTZBMkM3NyIsCiAgImxlYXJuZXJDTlVNIiA6ICI0MzE2NDY5UkVHIiwKICAib2JqZWN0VHlwZSIgOiAiQUNUSVZJVFkiCn08b2b908f18-10" target="_blank" class="cert-btn">
-                View Certificate
-              </a>
-            </div>
-          </article>
-
-          <!-- Certificate: Python Tkinter -->
-          <article class="card cert-card">
-            <div class="cert-icon">
-              <i class="fa fa-python"></i>
-            </div>
-            <div class="cert-content">
-              <h3 class="cert-title">Python Tkinter</h3>
-              <p class="cert-org">Great Learning Academy | Apr 2024</p>
-
-              <a href="https://www.mygreatlearning.com/certificate/KFEDVEYL" target="_blank" class="cert-btn">
-                View Certificate
-              </a>
-            </div>
-          </article>
-
-
-
-          <!-- Certificate 7 -->
-          <article class="card cert-card">
-            <div class="cert-icon">
-              <i class="fa fa-robot"></i>
-            </div>
-            <div class="cert-content">
-              <h3 class="cert-title">Artificial Intelligence Fundamentals</h3>
-              <p class="cert-org">IBM SkillsBuild | Mar 2025</p>
-
-              <a href="https://www.credly.com/users/sayan-jagulia" target="_blank" class="cert-btn">
-                View Certificate
-              </a>
-            </div>
-          </article>
-
-          <!-- Certificate 8 -->
-          <article class="card cert-card">
-            <div class="cert-icon">
-              <i class="fa fa-user-graduate"></i>
-            </div>
-            <div class="cert-content">
-              <h3 class="cert-title">English Communication And IT</h3>
-              <p class="cert-org">Anudip Foundation | Mar 2024</p>
-
-              <a href="https://drive.google.com/file/d/1Jl2epwcBctYP3DqufEJoGtWJ0FbPkKz1/view?usp=sharing"
-                target="_blank" class="cert-btn">
-                View Certificate
-              </a>
-            </div>
-          </article>
-
-          <!-- Certificate: Google Analytics -->
-          <article class="card cert-card">
-            <div class="cert-icon">
-              <i class="fa fa-chart-line"></i>
-            </div>
-            <div class="cert-content">
-              <h3 class="cert-title">Google Analytics</h3>
-              <p class="cert-org">Great Learning Academy | Feb 2023</p>
-
-              <a href="https://www.mygreatlearning.com/certificate/ZHQRVFLQ" target="_blank" class="cert-btn">
-                View Certificate
-              </a>
-            </div>
-          </article>
-
-
-          <!-- Certificate: Credly Badges -->
-          <article class="card cert-card">
-            <div class="cert-icon">
-              <i class="fa fa-id-badge"></i>
-            </div>
-            <div class="cert-content">
-              <h3 class="cert-title">Verified Badges</h3>
-              <p class="cert-org">Credly Profile</p>
-
-              <a href="https://www.credly.com/users/sayan-jagulia" target="_blank" class="cert-btn">
-                View Profile
-              </a>
-            </div>
-          </article>
-
-
-
 
         </div>
       </div>
@@ -590,8 +615,7 @@
             </div>
           </a>
 
-          <a class="card contact-card" href="https://linkedin.com/in/sayan-jagulia" target="_blank"
-            rel="noopener noreferrer" rel="noopener">
+          <a class="card contact-card" href="https://linkedin.com/in/sayan-jagulia" target="_blank" rel="noopener noreferrer">
             <div class="icon-wrap"><i class="fa-brands fa-linkedin"></i></div>
             <div class="contact-info">
               <h4>LinkedIn</h4>
@@ -670,16 +694,41 @@
     </div>
   </footer>
 
+  <!-- Mobile menu — placed at body level so z-index works correctly on all browsers -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Mobile menu">
+    <nav class="mobile-nav-right">
+
+      <!-- Panel header with close button -->
+      <div class="mobile-panel-header">
+        <span class="mobile-panel-title">Menu</span>
+        <button type="button" class="mobile-close" id="mobile-close" aria-label="Close menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Menu links -->
+      <ul class="mobile-list">
+        <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+        <li><a href="#education"><i class="fa fa-graduation-cap"></i>Education</a></li>
+        <li><a href="#skills"><i class="fa fa-code"></i>Skills</a></li>
+        <li><a href="#projects"><i class="fa fa-briefcase"></i>Projects</a></li>
+        <li><a href="#certificate"><i class="fa fa-certificate"></i>Certificate</a></li>
+        <li><a href="#contact-form"><i class="fa fa-envelope"></i>Contact</a></li>
+      </ul>
+
+      <!-- Bottom CTA -->
+      <div class="mobile-cta">
+        <a class="btn btn-primary full" href="https://drive.google.com/file/d/1FpZEuuStbqNfPEuxyIuYbj25fuFGayrF/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          Download Resume
+        </a>
+      </div>
+
+    </nav>
+  </div>
+
   <script src="script.js"></script>
 </body>
-
-
 </html>
-
-
-
-
-
 
 
 

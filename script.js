@@ -1,8 +1,61 @@
-// Minimal JS: mobile menu toggle, smooth scroll, year placeholder, dark/light mode
+// Portfolio JS: typewriter, mobile menu, smooth scroll, theme toggle, scroll reveal
 function init() {
   // year
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // ── Typewriter effect ──────────────────────────────────────
+  const typedEl = document.getElementById('typed-text');
+  if (typedEl) {
+    const phrases = [
+      'BCA Graduate & MCA Student',
+      'Full Stack Developer',
+      'PHP · Python · Java',
+      'Open to Internships & Jobs',
+    ];
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typingTimer;
+
+    function type() {
+      const current = phrases[phraseIndex];
+      if (isDeleting) {
+        typedEl.textContent = current.slice(0, charIndex - 1);
+        charIndex--;
+      } else {
+        typedEl.textContent = current.slice(0, charIndex + 1);
+        charIndex++;
+      }
+
+      let delay = isDeleting ? 40 : 75;
+
+      if (!isDeleting && charIndex === current.length) {
+        // Pause at end before deleting
+        delay = 1800;
+        isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        delay = 400;
+      }
+
+      typingTimer = setTimeout(type, delay);
+    }
+
+    // Small initial delay so hero entrance animation plays first
+    setTimeout(type, 900);
+
+    // Pause typing when tab is not visible, resume on return
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) {
+        clearTimeout(typingTimer);
+      } else {
+        typingTimer = setTimeout(type, 400);
+      }
+    });
+  }
+  // ──────────────────────────────────────────────────────────
 
   // Theme toggle
   const themeToggle = document.getElementById('theme-toggle');
@@ -227,29 +280,25 @@ function init() {
   document.addEventListener('keydown', focusTrap);
 
   // Reveal animations using IntersectionObserver (stagger + reduced-motion aware)
+  document.body.classList.add('js-loaded');
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const revealEls = document.querySelectorAll('.card, .project-card, .skill-card');
+  const revealEls = document.querySelectorAll('.card, .project-card, .skill-card, .timeline-item, .cert-card, .contact-card');
   if (prefersReduced) {
-    // avoid animations for reduced motion: just make elements visible
     revealEls.forEach(el => el.classList.add('in-view'));
   } else if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver((entries, obs) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const el = entry.target;
-          // set a small staggered delay if not defined
-          if (!el.getAttribute('data-delay')) {
-            const index = Array.from(revealEls).indexOf(el) % 6; // safe modulo
-            el.setAttribute('data-delay', index);
-          }
+          const index = Array.from(revealEls).indexOf(el) % 8;
+          el.style.transitionDelay = `${index * 0.055}s`;
           el.classList.add('in-view');
           obs.unobserve(el);
         }
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    }, { threshold: 0.08, rootMargin: '0px 0px -4% 0px' });
     revealEls.forEach(el => observer.observe(el));
   } else {
-    // Fallback: add in-view to all
     revealEls.forEach(el => el.classList.add('in-view'));
   }
 }
